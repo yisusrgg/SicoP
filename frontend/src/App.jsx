@@ -15,6 +15,7 @@ import Convocatorias from './pages/Administrador/Convocatorias';
 import NotFound from './pages/NotFound';
 import RegistroConvocatorias from './pages/Administrador/RegistroConvocatorias';
 import ConvocatoriasDetalle from './pages/Administrador/ConvocatoriasDetalle';
+import ConvocatoriaDetalle from './pages/Investigador/ConvocatoriaDetalle';
 import Register from './pages/Form-registroProyecto/Register';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -43,8 +44,9 @@ function App() {
         <Route path='/Detalles/Investigadores' element={<Investigadores/>}/>
         <Route path='/Detalles/Institucion' element={<Institucion/>}/>
         <Route path='/Detalles/Metas' element={<Metas/>}/>
-        <Route path='/Administracion/Convocatorias' element={<Convocatorias/>}/>
-        <Route path='/Administracion/Investigadores' element={<CrudInvestigadores/>}/>
+    <Route path='/Administracion/Convocatorias' element={<Convocatorias/>}/>
+    <Route path='/Administracion/Investigadores' element={<CrudInvestigadores/>}/>
+    <Route path='/Investigador/Convocatoria/:id' element={<ConvocatoriaDetalle/>} />
         <Route path='/Administracion/Proyectos' element={<CrudProyectos/>}/>
         <Route path="/RegistroProyectodos" element={<FormProyecto />} />
         <Route path='/Administracion/LGAC' element={<CrudLGAC/>}/>
