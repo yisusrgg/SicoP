@@ -23,6 +23,8 @@ import CrudProyectos from './pages/Administrador/CrudProyectos';
 import FormProyecto from "./pages/Form-registroProyecto/FormProyecto";
 import CrudLGAC from './pages/Administrador/CrudLGAC';
 import InvestigadoresRegistro from './pages/Administrador/InvestigadoresRegistro';
+import Login from "./pages/Login";
+
 //import ST from "./pages/students/StudentsList";
 
 function App() {
@@ -53,6 +55,8 @@ function App() {
         <Route path='/Administracion/RegistroConvocatorias' element={<RegistroConvocatorias/>}/>
         <Route path='/Administracion/ConvocatoriasDetalle' element={<ConvocatoriasDetalle/>}/>
         <Route path="/EditarProyecto/:id" element={<FormProyecto />} />
+        <Route path="/login" element={<Login />} />
+
       </Routes>
       </div>
       <Footer/>
